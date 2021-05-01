@@ -46,12 +46,12 @@ def diagonal_difference(arr):
 
 if __name__ == '__main__':
 
-    n = int(input().strip())
+    n = int(input("Enter count of numbers in the matrix: ").strip())
 
     arr = []
 
     for _ in range(n):
-        arr.append(list(map(int, input().rstrip().split())))
+        arr.append(list(map(int, input("row = ").rstrip().split())))
 
     result = diagonal_difference(arr)
 

@@ -15,6 +15,7 @@ import sys
 #   0.333333
 #   0.166667
 
+
 def plusMinus(arr):
     (zero_sum, pos_sum, neg_sum) = 0, 0, 0
     for num in arr:
@@ -24,9 +25,10 @@ def plusMinus(arr):
             pos_sum += 1
         else:
             neg_sum += 1
-    print("{:.6f}".format(float(pos_sum / len(arr))))
-    print("{:.6f}".format(float(neg_sum / len(arr))))
-    print("{:.6f}".format(float(zero_sum / len(arr))))
+    return ["{:.6f}".format(float(pos_sum / len(arr))),
+            "{:.6f}".format(float(neg_sum / len(arr))),
+            "{:.6f}".format(float(zero_sum / len(arr)))]
+
 
 
 if __name__ == '__main__':
@@ -34,4 +36,8 @@ if __name__ == '__main__':
 
     arr = list(map(int, input().rstrip().split()))
 
-    plusMinus(arr)
+    result = plusMinus(arr)
+
+    print(result[0])
+    print(result[1])
+    print(result[2])

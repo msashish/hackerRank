@@ -13,6 +13,14 @@
     git remote add origin https://github.com/msashish/hackerRank.git
     git push -u origin main
     
+    
+### Testing solutions automatically
+    python -m unittest tests/test_plus_minus.py
+    python -m unittest tests/test_diagonal_difference.py
+    
+### Run all test caSes
+    python -m unittest discover tests
+    
 ### Testing solutions manually
-    python diagonal_difference.py
-    python plus_minus.py
+    python solutions/diagonal_difference.py
+    python solutions/plus_minus.py
