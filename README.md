@@ -5,6 +5,14 @@
     python -m virtualenv .hacker
     source .hacker/bin/activate
     
-## Testing solutions manually
+### basic git setup
+    git init
+    git add README.md
+    git commit -m "......"
+    git branch -M main
+    git remote add origin https://github.com/msashish/hackerRank.git
+    git push -u origin main
+    
+### Testing solutions manually
     python diagonal_difference.py
     python plus_minus.py
