@@ -1,10 +1,9 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
+"""
+Given a square matrix of numbers, find sum of diagonal numbers.
+And then find absolute difference of diagonal sums
+"""
 
 
 # Input format = n x n matrix

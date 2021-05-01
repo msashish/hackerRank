@@ -1,10 +1,13 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
+"""
+Given an array of numbers, calculate following:
+    Ratio of count of positive numbers in array
+    Ratio of count of negative numbers in array
+    Ratio of count of zeros in array
+
+And upto 6 decimal positions....
+"""
 
 #
 # Input format
