@@ -1,17 +1,11 @@
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
 #
-# Complete the 'stockmax' function below.
-#
-# The function is expected to return a LONG_INTEGER.
-# The function accepts INTEGER_ARRAY prices as parameter.
-#
+# Given array containing daily value of a particular stock,
+# Decide when to buy and when to sell so that profit is maximum by end of final day
+# We can only buy 1 stock each day. We can sell as many stocks as possible.
+# On a given day either we can sell or buy or do nothing
+# ---> see tests/test_stock_profit.py for examples
 
 
 def stockmax(n, prices):
