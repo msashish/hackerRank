@@ -17,6 +17,7 @@
 ### Testing solutions automatically
     python -m unittest tests/test_plus_minus.py
     python -m unittest tests/test_diagonal_difference.py
+    python -m unittest tests/test_stock_profit.py
     
 ### Run all test cases
     python -m unittest discover tests
