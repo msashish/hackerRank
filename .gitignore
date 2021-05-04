@@ -1,0 +1,4 @@
+.hacker/
+.idea/
+solutions/__pycache__/
+tests/__pycache__/

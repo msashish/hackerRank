@@ -33,7 +33,6 @@ def plusMinus(arr):
             "{:.6f}".format(float(zero_sum / len(arr)))]
 
 
-
 if __name__ == '__main__':
     n = int(input().strip())
 
