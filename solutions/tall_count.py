@@ -4,7 +4,7 @@
 # Given an array of numbers,
 # Calculate count of biggest number
 # 3 2 1 3
-# 3 is the biggest number appearting twice hence output count is 2
+# 3 is the biggest number appearing twice hence output count is 2
 
 
 def tall_count(arr):
