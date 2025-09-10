@@ -12,24 +12,24 @@ output:
 """
 
 
-def rotLeft(a, d, n):
-    if d == n:
-        return a
+def rotLeft(input_array, rotate_by, input_array_count):
+    if rotate_by == input_array_count:
+        return input_array
 
-    return [element for element in a[d:]] + [a[i] for i in range(d)]
+    return [element for element in input_array[rotate_by:]] + [input_array[i] for i in range(rotate_by)]
 
 
 if __name__ == '__main__':
 
-    first_multiple_input = input().rstrip().split()
+    first_multiple_input = input("Please enter input_array_count, rotate_by with space separation \n").rstrip().split()
 
-    n = int(first_multiple_input[0])
+    input_array_count = int(first_multiple_input[0])
 
-    d = int(first_multiple_input[1])
+    rotate_by = int(first_multiple_input[1])
 
-    a = list(map(int, input().rstrip().split()))
+    input_array = list(map(int, input("Please enter input array numbers with space separation \n").rstrip().split()))
 
-    result = rotLeft(a, d, n)
+    result = rotLeft(input_array, rotate_by, input_array_count)
 
     print(result)
 
